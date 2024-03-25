@@ -413,19 +413,19 @@ const Home = () => {
           </div>
           <div className="w-1/2 h-fit rounded-md">
             {/* newletter */}
-            <div className="flex flex-col">
+            <div className="flex w-full bg-white rounded-md">
               <input
                 type="email"
                 placeholder="Enter Email"
                 name=""
                 id=""
                
-                className="w-full text-[#524F4F] rounded-md p-5  outline-none  border-none bg-white"
+                className="w-[70%] text-[#524F4F] rounded-md p-5  outline-none  border-none bg-white"
               />
               <button
                 type="submit"
                 disabled
-                className="bg-[#524F4F]  w-1/3 rounded-md my-3 text-[#fff]  py-5 px-8"
+                className="bg-[#ED2C54]  w-[30%]  mr-3 rounded-md my-3 text-[#fff]  py-5 px-8"
               >
                 Submit
               </button>
