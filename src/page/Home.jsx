@@ -106,9 +106,9 @@ const Home = () => {
   return (
     <div className="bg-[#ED2C54] w-full h-full bg-opacity-10 text-[#524F4F]">
       {/* nav */}
-      <div className="flex  items-center justify-between py-10 mx-auto w-[70%]  h-16">
-        <img src={Castellum} alt="castellum-logo" className="w-32 h-auto " />
-        <div className="flex gap-5 items-center">
+      <div className="flex  items-center justify-between py-10 mx-auto w-[95%] md:w-[85%] lg:w-[70%]  h-16">
+        <img src={Castellum} alt="castellum-logo" className="w-28 md:w-32 h-auto " />
+        <div className="flex gap-2 md:gap-5 items-center">
           {NavBar.map((nav) => (
             <a
               className="font-medium hover:text-[#ED2C54]"
@@ -129,17 +129,14 @@ const Home = () => {
         </div> */}
       </div>
       {/* header */}
-      <div className="w-[70%] mx-auto flex my-16 items-center gap-10">
-        <div className="flex flex-col w-1/2">
-          <p className="text-[#ED2C54] text-lg">Educate • Empower • Secure</p>
-          <p className="font-bold text-8xl leading-[5rem] ">
-            Redefining <br />{" "}
-            <span className="text-[#ED2C54] italic">Security</span> <br />
-            Awareness <br />
-            Training
+      <div className="w-[95%] md:w-[85%] lg:w-[70%] mx-auto flex flex-col md:flex-row my-4 md:my-16 items-center gap-10">
+        <div className="flex flex-col w-full md:w-1/2">
+          <p className="text-[#ED2C54] text-xs md:text-lg">Educate • Empower • Secure</p>
+          <p className="font-bold text-3xl md:text-6xl lg:text-8xl md:leading-[5rem] ">
+            Redefining <span className="text-[#ED2C54] italic">Security </span> Awareness  Training
           </p>
         </div>
-        <div className="w-1/2 h-[35rem] relative">
+        <div className="w-full md:w-1/2 h-[15rem] md:h-[20rem] lg:h-[35rem] relative">
           <img
             src={banner}
             alt="Descriptive Alt Text"
@@ -148,8 +145,8 @@ const Home = () => {
         </div>
       </div>
       {/* banner */}
-      <div className="w-[70%] mx-auto flex items-center gap-10">
-        <div className="w-1/2 h-[20rem] relative">
+      <div className="w-[95%] md:w-[85%] lg:w-[70%] mx-auto flex flex-col md:flex-row items-center gap-5 md:gap-10">
+        <div className="w-full md:w-1/2 h-[10rem] md:h-[20rem] relative">
           <img
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBwZW9wbGUlMjBlJTIwbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D"
             alt="Descriptive Alt Text"
@@ -157,11 +154,11 @@ const Home = () => {
           />
         </div>
 
-        <div className="flex-1">
-          <p className="font-bold text-3xl pb-6">
+        <div className="w-full md:flex-1">
+          <p className="font-bold text-xl md:text-3xl pb-2 md:pb-6">
             Making Learning Fun, Empowering and Effective for your Organization
           </p>
-          <p>
+          <p className="text-xs md:text-lg">
             Welcome to Castellum, the future of security awareness training. We
             are on a mission to revolutionize how organizations approach
             cybersecurity education. Anticipate an innovative platform designed
@@ -171,11 +168,11 @@ const Home = () => {
         </div>
       </div>
       {/* sign up */}
-      <div className="w-full h-fit bg-[#ED2C54] my-16  text-white ">
-        <div className="flex items-center py-16 gap-10 mx-auto w-[70%]">
-          <div className="flex flex-col w-1/2 ">
-            <p className="text-3xl font-bold py-3">Sign Up Now!</p>
-            <p>
+      <div className="w-full h-fit bg-[#ED2C54] my-8 md:my-16  text-white ">
+        <div className="flex flex-col md:flex-row items-center py-8 md:py-16 gap-10 mx-auto w-[95%] md:w-[85%] lg:w-[70%]">
+          <div className="flex flex-col w-full md:w-1/2 ">
+            <p className="text-xl md:text-3xl font-bold py-1 md:py-3">Sign Up Now!</p>
+            <p className="text-xs md:text-lg">
               Join the revolution! Sign up now to be the first to experience
               Castellum when it launches. Stay ahead of cyber threats and
               empower your team with the future of security awareness training.{" "}
@@ -187,7 +184,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="w-1/2 h-[17rem] relative">
+          <div className="w-full md:w-1/2 h-[14rem] md:h-[17rem] relative">
             <img
               src={Learning}
               alt="Descriptive Alt Text"
@@ -197,29 +194,29 @@ const Home = () => {
         </div>
       </div>
       {/* about us */}
-      <div id="about" className="w-full h-fit  my-8">
-        <div className="w-[70%] mx-auto">
+      <div id="about" className="w-full h-fit my-2  md:my-8">
+        <div className="w-[95%] md:w-[85%] lg:w-[70%] mx-auto">
           <div className="text-center">
-            <p className="text-3xl font-bold">About Us</p>
-            <p className=" pt-5">
+            <p className="text-xl md:text-3xl font-bold">About Us</p>
+            <p className="pt-1 text-xs md:text-lg md:pt-5">
               Learn more about Castellum and our mission to revolutionize
               <br />
               security awareness training.{" "}
             </p>
           </div>
           <div className="mx-auto w-full">
-            <div className="flex  items-start mx-auto my-12  gap-10">
+            <div className="flex flex-col md:flex-row  items-start mx-auto my-4 md:my-12 gap-5  md:gap-10">
               {AboutUs.map((about) => (
                 <div
                   key={about.topic}
-                  className="w-1/2  h-[18rem] bg-[#ED2C54] bg-opacity-20 rounded-md p-10"
+                  className="w-full md:w-1/2 h-[15rem]  md:h-[19rem] bg-[#ED2C54] bg-opacity-20 rounded-md p-10"
                 >
-                  <p className="pb-2">
-                    <BsFillRocketTakeoffFill size={30} />
+                  <p className="pb-2 text-xl md:text-3xl">
+                    <BsFillRocketTakeoffFill/>
                   </p>
-                  <p className="text-2xl py-2">{about.topic}</p>
-                  <p>{about.paragraph1}</p>
-                  <p className="pb-10">{about.p2}</p>
+                  <p className="text-xl md:text-2xl py-2">{about.topic}</p>
+                  <p className="text-xs md:text-lg">{about.paragraph1}</p>
+                  <p className="text-xs md:text-lg">{about.p2}</p>
                 </div>
               ))}
             </div>
@@ -227,9 +224,9 @@ const Home = () => {
         </div>
       </div>
       {/* video */}
-      <div className="w-full h-fit py-12 bg-[#ED2C54] bg-opacity-90 mt-16  text-white ">
+      <div className="w-full h-fit py-4 md:py-12 bg-[#ED2C54] bg-opacity-90 mt-8 md:mt-16  text-white ">
         <video
-          className="w-full h-auto max-w-3xl mx-auto rounded shadow-lg"
+          className="w-[90%] md:w-full h-auto max-w-lg md:max-w-3xl mx-auto rounded shadow-lg"
           controls
           autoPlay={true}
         >
@@ -243,10 +240,10 @@ const Home = () => {
 
       {/* why */}
       <div className="w-full h-fit my-8">
-        <div className="w-[70%] mx-auto">
+        <div className="w-[95%] md:w-[85%] lg:w-[70%] mx-auto">
           <div className="text-center">
-            <p className="text-3xl font-bold">Why Castellum?</p>
-            <p className=" pt-5">
+            <p className=" text-xlmd:text-3xl font-bold">Why Castellum?</p>
+            <p className="text-xs pt-2 md:text-lg md:pt-5">
               Security awareness training has historically been dull and
               uninspiring. Employees dread the <br /> thought of mandatory
               training modules that offer little engagement.At Castellum,we are
@@ -254,15 +251,15 @@ const Home = () => {
             </p>
           </div>
           <div className="mx-auto w-full">
-            <div className=" mx-auto my-12 ">
+            <div className=" mx-auto my-6 md:my-12 ">
               {WhyCastellum.map((why, i) => (
                 <div
-                  className={`flex my-8 gap-20 items-center ${
-                    i % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                  className={`flex my-4 md:my-8 gap-8 md:gap-20 items-center ${
+                    i % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse"
                   }`}
                   key={i}
                 >
-                  <div className="w-[40%] h-[15rem] relative">
+                  <div className="w-full md:w-[40%] h-[10rem] md:h-[15rem] relative">
                     <img
                       src={why.img}
                       alt="Descriptive Alt Text"
@@ -270,8 +267,8 @@ const Home = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <p className="font-bold text-xl">{why.header}</p>
-                    <p className="text-justify">{why.paragh}</p>
+                    <p className="font-bold text-lg text-center md:text-left md:text-xl">{why.header}</p>
+                    <p className="text-center text-xs md:text-lg md:text-justify">{why.paragh}</p>
                   </div>
                 </div>
               ))}
@@ -281,10 +278,10 @@ const Home = () => {
       </div>
       {/* Revolution */}
       <div className="w-full h-fit my-20">
-        <div className="w-[70%] mx-auto">
+        <div className="w-[95%] md:w-[85%] lg:w-[70%] mx-auto">
           <div className="text-center">
-            <p className="text-3xl font-bold">Join The Revolution</p>
-            <p className=" pt-5 pb-16">
+            <p className="text-xl md:text-3xl font-bold">Join The Revolution</p>
+            <p className=" text-xs md:text-lg pt-1 md:pt-5 pb-8 md:pb-16">
               Ready to say goodbye to boring security awareness training? Join
               the Castellum revolution and empower <br /> your team with
               engaging, effective cybersecurity education. Together, we can
@@ -293,17 +290,17 @@ const Home = () => {
             </p>
           </div>
           <div className="mx-auto w-full">
-            <div className="flex  justify-center items-start gap-5 flex-wrap">
+            <div className="flex flex-col md:flex-row  justify-center items-start gap-5 flex-wrap">
               {Revol.map((r, i) => (
                 <div
                   key={i}
-                  className="w-[30%]  h-[13rem] p-5 rounded-md border border-[#ED2C54]"
+                  className="w-full md:w-[30%] h-[10rem]  md:h-[13rem] p-5 rounded-md border border-[#ED2C54]"
                 >
                   <p className="text-3xl">{r.icon}</p>
-                  <p className="text-[#ED2C54] font-bold text-lg py-2">
+                  <p className="text-[#ED2C54] font-bold text-sm md:text-lg py-2">
                     {r.header}
                   </p>
-                  <p>{r.paragh}</p>
+                  <p className="text-xs md:text-[16px] md:leading-5">{r.paragh}</p>
                 </div>
               ))}
             </div>
@@ -315,26 +312,26 @@ const Home = () => {
         id="contact"
         className="w-full h-fit bg-[#ED2C54] bg-opacity-90 mt-16  text-white "
       >
-        <div className="flex items-center py-16 gap-10 mx-auto w-[70%]">
-          <div className="flex flex-col w-1/2 ">
-            <p className="text-3xl font-bold py-3">Get In Touch!</p>
-            <p>
-              Have questions or need more information? Contact us today <br />{" "}
+        <div className="flex flex-col md:flex-row items-center py-8 md:py-16 gap-10 mx-auto w-[95%] md:w-[85%] lg:w-[70%]">
+          <div className="flex flex-col w-full md:w-1/2 ">
+            <p className="text-3xl font-bold py-1 md:py-3">Get In Touch!</p>
+            <p className="text-xs md:text-lg">
+              Have questions or need more information? Contact us today {" "}
               to speak with a member of our team.
             </p>
           </div>
           {/* form */}
-          <div className="w-1/2 h-fit py-6 relative text-[#524F4F] bg-white rounded-md">
-            <form className="w-[90%] mx-auto p-5 ">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col">
+          <div className="w-full md:w-1/2 h-fit py-6 relative text-[#524F4F] bg-white rounded-md">
+            <form className="w-[90%] mx-auto p-1 md:p-5 ">
+              <div className="flex flex-col md:flex-row justify-between">
+                <div className="flex  flex-col">
                   <label>
                     First Name <span className="text-[#ED2C54]">*</span>
                   </label>
                   <input
                     type="text"
                     name="firstName"
-                    className="outline-none border-b-2 border-[#524F4F]  border-opacity-70"
+                    className="outline-none  border-b-2 border-[#524F4F]  border-opacity-70"
                     required
                   />
                 </div>
@@ -350,7 +347,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center mt-8 justify-between">
+              <div className="flex flex-col md:flex-row  mt-2 md:mt-8 justify-between">
                 <div className="flex flex-col">
                   <label>
                     Email <span className="text-[#ED2C54]">*</span>
@@ -374,7 +371,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col mt-8">
+              <div className="flex flex-col mt-4 md:mt-8">
                 <label>
                   How can we Help You? <span className="text-[#ED2C54]">*</span>
                 </label>
@@ -392,7 +389,7 @@ const Home = () => {
               >
                 Submit
               </button>
-              <p className="text-sm">
+              <p className="text-xs md:text-sm">
                 {" "}
                 By Submiting, You agree to our Privacy Policy
               </p>
@@ -402,16 +399,16 @@ const Home = () => {
       </div>
       {/* main-footer */}
       <div className="w-full h-fit bg-[#ED2C54]   text-white ">
-        <div className="flex items-center justify-between py-16 gap-10 mx-auto w-[70%]">
-          <div className="flex flex-col w-1/2 ">
-            <p className="text-3xl font-bold py-3">Stay Connected!</p>
-            <p>
+        <div className="flex flex-col md:flex-row items-center justify-between py-4 md:py-16 gap-4 md:gap-10 mx-auto w-[95%] md:w-[85%] lg:w-[70%]">
+          <div className="flex flex-col w-full md:w-1/2 ">
+            <p className="text-xl text-center md:text-left md:text-3xl font-bold py-3">Stay Connected!</p>
+            <p className="text-xs md:text-lg"> 
               Be the first to know about updates, news, and exclusive offers
               from Castellum. Follow us on social media and subscribe to our
               newsletter.
             </p>
           </div>
-          <div className="w-1/2 h-fit rounded-md">
+          <div className="w-full md:w-1/2 h-fit rounded-md">
             {/* newletter */}
             <div className="flex w-full bg-white rounded-md">
               <input
@@ -420,12 +417,12 @@ const Home = () => {
                 name=""
                 id=""
                
-                className="w-[70%] text-[#524F4F] rounded-md p-5  outline-none  border-none bg-white"
+                className="w-[70%] text-[#524F4F] rounded-md  p-2 md:p-5  outline-none  border-none bg-white"
               />
               <button
                 type="submit"
                 disabled
-                className="bg-[#ED2C54]  w-[30%]  mr-3 rounded-md my-3 text-[#fff]  py-5 px-8"
+                className="bg-[#ED2C54]  w-[30%]  mr-3 rounded-md my-1 md:my-3 text-[#fff] text-center py-1.5 md:py-5 px-2 md:px-8"
               >
                 Submit
               </button>
@@ -435,8 +432,8 @@ const Home = () => {
         <hr />
       </div>
       {/* mainlat-footer */}
-      <div className="w-full h-fit bg-[#ED2C54] text-xs  text-white ">
-        <div className="flex items-center justify-between py-8 mx-auto w-[70%]">
+      <div className="w-full h-fit bg-[#ED2C54] text-[10px] md:text-xs  text-white ">
+        <div className="flex flex-col md:flex-row items-center justify-between py-4 md:py-8 mx-auto w-[95%] md:w-[85%] lg:w-[70%]">
           <div className="flex flex-col  ">
             <p>
               © 2024 Castellum. All rights reserved. Privacy Policy | Terms of
